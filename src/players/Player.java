@@ -16,6 +16,7 @@ public abstract class  Player {
 	{
 		id = counter++;
 		this.name = name;
+		points = 0;
 	}
 	
 	

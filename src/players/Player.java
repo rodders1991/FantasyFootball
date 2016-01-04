@@ -1,4 +1,4 @@
-package computer;
+package players;
 
 public abstract class  Player {
 	
@@ -10,6 +10,13 @@ public abstract class  Player {
 	private boolean isSuspended;
 	private int points;
 	
+	private static int counter = 0;
+	
+	public Player(String name)
+	{
+		id = counter++;
+		this.name = name;
+	}
 	
 	
 	public void pointsIncrease(int p)
